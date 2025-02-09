@@ -13,7 +13,9 @@ const Skeleton = ({count=1, type="Banner"}) => {
           ))}
         </ul>
       ) : (
-        <li className={type === "Banner" ? styles.banner : styles.item}></li>
+        <li className={type === "Banner" ? styles.banner : styles.item}>
+          ЗАГРУЗКА ЕБАТЬ...
+        </li>
       )}
     </>
   );
