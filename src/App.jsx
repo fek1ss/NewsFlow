@@ -1,10 +1,7 @@
-
 import Header from './components/Header/Header';
 import Main from './pages/Main/Main.jsx';
 
-
 function App() {
-
   return (
     <>
       <Header />
@@ -12,7 +9,7 @@ function App() {
         <Main />
       </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
