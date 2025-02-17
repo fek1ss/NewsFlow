@@ -8,6 +8,7 @@ import { formatPublishedDate } from "../../helpers/formatPublishedDate";
  */
 
 const NewsBanner = ({item}) => {
+  console.log(item.published)
 
   return (
     <div className={styles.banner}>

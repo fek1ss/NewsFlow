@@ -1,4 +1,4 @@
 export const formatPublishedDate = (published) => {
   if(!published) return "uknown date";
-  return published.split(" +")[0];
+  return published.slice(0, 16);
 }
