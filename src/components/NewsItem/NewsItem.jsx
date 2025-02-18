@@ -1,11 +1,13 @@
-import styles from "./styles.module.css";
-import { formatPublishedDate } from "../../helpers/formatPublishedDate";
+import styles from './styles.module.css';
+import { formatPublishedDate } from '../../helpers/formatPublishedDate';
 
-const NewsItem = ({item}) => {
-
+const NewsItem = ({ item }) => {
   return (
     <li className={styles.item}>
-      <div className={styles.wrapper} style={{backgroundImage:`url(${item.image})`}}>
+      <div
+        className={styles.wrapper}
+        style={{ backgroundImage: `url(${item.image})` }}
+      >
         {/* banner-img */}
       </div>
       <div className={styles.info}>
@@ -15,7 +17,7 @@ const NewsItem = ({item}) => {
         </p>
       </div>
     </li>
-  )
-}
+  );
+};
 
 export default NewsItem;
