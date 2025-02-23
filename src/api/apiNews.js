@@ -2,7 +2,7 @@ import axios from 'axios';
 
 /**
  *   getNews функция для получения новостей
- *   getCategories функция для фильтрации по категориям
+ *
  */
 
 const BASE_URL = import.meta.env.VITE_NEWS_BASE_API_URL;
