@@ -24,6 +24,12 @@ const Main = () => {
   const fetchNews = async (currentPage) => {
     try {
       setIsLoading(true);
+      console.log('🔍 Запрос с параметрами:', {
+        page_number: currentPage,
+        page_size: pageSize,
+        category: selectedCategory === 'All' ? '' : selectedCategory, // Исправлено
+        keywords: debouncedKeyword || '', // Исправлено
+      });
       const response = await getNews({
         page_number: currentPage,
         page_size: pageSize,
